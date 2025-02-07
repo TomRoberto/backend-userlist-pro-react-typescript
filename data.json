@@ -1,0 +1,27 @@
+[
+  {
+    "username": "Jean-Christophe",
+    "email": "jc@gmail.com",
+    "age": 56
+  },
+  {
+    "username": "Philippe",
+    "email": "phil@gmail.com",
+    "age": 38
+  },
+  {
+    "username": "Marie",
+    "email": "jc@gmail.com",
+    "age": 28
+  },
+  {
+    "username": "Emilie",
+    "email": "emilie@mail.com",
+    "age": 43
+  },
+  {
+    "username": "Estelle",
+    "email": "estelle@mail.com",
+    "age": 30
+  }
+]
