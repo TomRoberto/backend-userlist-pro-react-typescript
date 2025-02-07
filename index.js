@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
@@ -7,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/user-list");
+mongoose.connect(process.env.MONGODB_URI);
 
 const User = mongoose.model("User", {
   username: String,
@@ -71,4 +72,4 @@ app.delete("/users/:id", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server started"));
+app.listen(process.env.PORT, () => console.log("Server started"));
